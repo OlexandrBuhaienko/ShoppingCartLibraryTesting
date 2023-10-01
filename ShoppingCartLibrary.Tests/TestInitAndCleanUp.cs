@@ -7,6 +7,7 @@ namespace ShoppingCartLibrary.Tests
     {
         private ShoppingCart cart;
         private Item item;
+        //Запускається перед стартом кожного тестованого методу
         [TestInitialize]
         public void TestInitialize()
         {
@@ -16,6 +17,7 @@ namespace ShoppingCartLibrary.Tests
             cart = new ShoppingCart();
             cart.Add(item);
         }
+        //Запускається після кожного тестованого методу
         [TestCleanup]
         public void TestCleanUp()
         {
